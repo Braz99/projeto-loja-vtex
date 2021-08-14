@@ -1,0 +1,12 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-bar"
+    ]
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "pesquisa"
+    }
+  }
+}
