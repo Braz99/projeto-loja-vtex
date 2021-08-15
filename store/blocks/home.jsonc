@@ -1,44 +1,91 @@
 {
-  "store.home": { 
-    "blocks": [
-      "slider-layout#home"
-    ]
-  }, 
-  "slider-layout#home": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "false",
-      "blockClass": "carousel",
-      "autoplay": {
-        "timeout" : 5000,
-        "stopOnHover": true
-      }
-      
-    },
-    "children": ["image#banner1", "image#banner2"]
-  },
+	"store.home": {
+		"blocks": ["tab-layout#home", "slider-layout#home"]
+	},
+	"tab-layout#home": {
+		"children": ["tab-list#home", "tab-content#home"],
+		"props": {
+			"blockClass": "h",
+			"defaultActiveTabId": "false"
+		}
+	},
+	"tab-list#home": {
+		"props": {
+			"blockClass": "home"
+		},
+		"children": [
+			"tab-list.item#home1",
+			"tab-list.item#home2",
+			"tab-list.item#home3"
+		]
+	},
+	"tab-list.item#home1": {
+		"props": {
+			"tabId": "category1",
+			"label": "Promoção",
+			"defaultActiveTab": "false"
+		}
+	},
+	"tab-list.item#home2": {
+		"props": {
+			"tabId": "category2",
+			"label": "Corinthians"
+		}
+	},
+	"tab-list.item#home3": {
+		"props": {
+			"tabId": "category3",
+			"label": "Alguma coisa"
+		}
+	},
+	"tab-content#home": {
+		"children": ["tab-content.item#home1"]
+	},
 
-  "image#banner1": {
-    "props": {
-      "src": "assets/BANNER-WOOD.png",
-      "alt": "Banner wood sport",
-      "width": "70%",
-      "blockClass": "banner"
-    }
-  },
+	"tab-content.item#home1": {
+		"children": ["rich-text#question"],
+		"props": {
+			"tabId": "category1"
+		}
+	},
 
-  "image#banner2": {
-    "props": {
-      "src": "assets/banner2.png", 
-      "alt": "banner grande guerreiros",
-      "width": "70%",
-      "blockClass": "banner"
-    }
-  }
+	"rich-text#question": {
+		"props": {}
+	},
 
+	"slider-layout#home": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "false",
+			"blockClass": "carousel",
+			"autoplay": {
+				"timeout": 5000,
+				"stopOnHover": true
+			}
+		},
+		"children": ["image#banner1", "image#banner2"]
+	},
+
+	"image#banner1": {
+		"props": {
+			"src": "assets/BANNER-WOOD.png",
+			"alt": "Banner wood sport",
+			"width": "70%",
+			"blockClass": "banner"
+		}
+	},
+
+	"image#banner2": {
+		"props": {
+			"src": "assets/banner2.png",
+			"alt": "banner grande guerreiros",
+			"width": "70%",
+			"blockClass": "banner"
+		}
+	}
 }

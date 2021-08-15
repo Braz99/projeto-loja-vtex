@@ -1,0 +1,13 @@
+.listContainer--home {
+	background-color: #212121;
+	color: darkred;
+}
+
+:global(.vtex-button):hover {
+	background-color: #212121;
+}
+
+.listItem :global(.vtex-button) {
+	background-color: #212121;
+	border: 0px solid #212121;
+}
