@@ -45,8 +45,8 @@
 		"props": {
 			"title": "Logo",
 			"href": "/",
-			"url": "/arquivos/upmedal.png",
-			"width": "100"
+			"url": "assets/upmedal.png",
+			"width": "80"
 		}
 	},
 	"header-layout.mobile": {

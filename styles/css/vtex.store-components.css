@@ -3,3 +3,6 @@
 	color: rgb(197, 24, 24);
 }
 
+.imageElement--banner  {
+    border-radius: 10px;
+}
