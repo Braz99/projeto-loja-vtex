@@ -16,13 +16,15 @@
 		"children": [
 			"tab-list.item#home1",
 			"tab-list.item#home2",
-			"tab-list.item#home3"
+			"tab-list.item#home3",
+			"tab-list.item#home4",
+			"tab-list.item#home5"
 		]
 	},
 	"tab-list.item#home1": {
 		"props": {
 			"tabId": "category1",
-			"label": "Promoção",
+			"label": "Troféus",
 			"defaultActiveTab": "false"
 		}
 	},
@@ -35,21 +37,33 @@
 	"tab-list.item#home3": {
 		"props": {
 			"tabId": "category3",
-			"label": "Alguma coisa"
+			"label": "Promoção"
 		}
 	},
+
+	"tab-list.item#home4": {
+		"props": {
+			"tabId": "category4",
+			"label": "Descontos"
+		}
+	},
+	"tab-list.item#home5": {
+		"props": {
+			"tabId": "category5",
+			"label": "Camisas"
+		}
+	},
+
 	"tab-content#home": {
 		"children": ["tab-content.item#home1"]
 	},
-
 	"tab-content.item#home1": {
-		"children": ["rich-text#question"],
+		"children": ["rich-text#home1"],
 		"props": {
 			"tabId": "category1"
 		}
 	},
-
-	"rich-text#question": {
+	"rich-text#home1": {
 		"props": {}
 	},
 

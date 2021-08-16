@@ -1,3 +1,7 @@
-.flexRow--main-header-desktop, .flexRow--main-header-mobile  {
+.flexRow--main-header-desktop  {
+	background-color: #212121;
+}
+
+.flexRow--main-header-mobile {
 	background-color: #212121;
 }
