@@ -1,6 +1,10 @@
 {
 	"store.home": {
-		"blocks": ["tab-layout#home", "slider-layout#home"]
+		"blocks": [
+			"tab-layout#home",
+			"slider-layout#home",
+			"list-context.product-list#home"
+		]
 	},
 	"tab-layout#home": {
 		"children": ["tab-list#home", "tab-content#home"],
@@ -64,7 +68,7 @@
 		}
 	},
 	"rich-text#home1": {
-		"props": {}
+		"props": { "text": "oi" }
 	},
 
 	"slider-layout#home": {
@@ -100,6 +104,42 @@
 			"alt": "banner grande guerreiros",
 			"width": "70%",
 			"blockClass": "banner"
+		}
+	},
+	"list-context.product-list#home": {
+		"blocks": ["product-summary.shelf#home"],
+		"children": ["slider-layout#products"],
+		"props": {
+			"category": "eletronics",
+			"hideUnavailableItems": true,
+			"blockClass": "products"
+		}
+	},
+	"slider-layout#products": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 3,
+				"tablet": 2,
+				"phone": 2
+			},
+			"infinite": true,
+			"showNavigationArrows": "false",
+			"blockClass": "products",
+			"autoplay": {
+				"timeout": 5000,
+				"stopOnHover": true
+			}
+		}
+	},
+	"product-summary.shelf#home": {
+		"children": [
+			"product-summary-image",
+			"product-summary-name",
+			"product-selling-price",
+			"product-summary-buy-button"
+		],
+		"props": {
+			"blockClass": "products"
 		}
 	}
 }

@@ -1,10 +1,15 @@
 .slideChildrenContainer--carousel {
-    margin: 20px 0px;
-    border-radius: 10px;
+	margin: 20px 0px;
+	border-radius: 10px;
 }
 
+.slide--carousel {
+	background-color: #303030;
+}
 .paginationDot--carousel--isActive {
-    background-color: rgb(196, 37, 37);
+	background-color: rgb(196, 37, 37);
 }
 
-
+.slideChildrenContainer--products {
+	padding: 20px 0px;
+}
