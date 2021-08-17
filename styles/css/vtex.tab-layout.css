@@ -1,6 +1,5 @@
 .listContainer--home {
 	background-color: #212121;
-	color: darkred;
 }
 
 :global(.vtex-button):hover {
@@ -10,4 +9,8 @@
 .listItem :global(.vtex-button) {
 	background-color: #212121;
 	border: 0px solid #212121;
+}
+
+.listItemActive {
+	border-bottom: 2px solid rgb(196, 37, 37);
 }
