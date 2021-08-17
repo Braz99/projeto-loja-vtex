@@ -1,11 +1,13 @@
+.sliderLayoutContainer--carousel {
+	background-color: #303030;
+}
+
 .slideChildrenContainer--carousel {
 	margin: 20px 0px;
 	border-radius: 10px;
 }
 
-.slide--carousel {
-	background-color: #303030;
-}
+
 .paginationDot--carousel--isActive {
 	background-color: rgb(196, 37, 37);
 }

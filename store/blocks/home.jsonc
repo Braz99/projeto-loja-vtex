@@ -110,7 +110,7 @@
 		"blocks": ["product-summary.shelf#home"],
 		"children": ["slider-layout#products"],
 		"props": {
-			"category": "eletronics",
+			"category": "Kit UpMedal",
 			"hideUnavailableItems": true,
 			"blockClass": "products"
 		}
@@ -122,7 +122,7 @@
 				"tablet": 2,
 				"phone": 2
 			},
-			"infinite": true,
+			"infinite": false,
 			"showNavigationArrows": "false",
 			"blockClass": "products",
 			"autoplay": {
@@ -133,13 +133,13 @@
 	},
 	"product-summary.shelf#home": {
 		"children": [
-			"product-summary-image",
 			"product-summary-name",
+			"product-summary-image",
 			"product-selling-price",
 			"product-summary-buy-button"
 		],
 		"props": {
-			"blockClass": "products"
+			"blockClass": "productsshelf"
 		}
 	}
 }

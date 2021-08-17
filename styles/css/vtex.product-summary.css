@@ -1,24 +1,33 @@
-.container--products {
-	background-color: aqua;
+.container--productsshelf {
+	background-color: #424242;
 	margin: 20px 20px;
-	padding: 20px;
-    min-width: 300px;
-    min-height: 300px;
+	height: auto;
+	box-shadow: 1px 1px 10px #212121;
+	padding: 0px;
 }
 
-.buyButton:global(.vtex-button) {
+.buyButton :global(.vtex-button) {
+	background-color: rgb(13, 156, 192);
+	
+}
+
+.buyButton :global(.vtex-button):hover {
 	background-color: rgb(196, 37, 37);
 }
 
-
-
-.image--products {
-	width: 80%;
-	height: 10%;
+.imageContainer {
+	padding: 0px;
 }
 
+.image {
+	width: 100vw;
+	margin: 0px;
+}
 
-@media (min-width: 700px) {
-    
-    
+.nameContainer {
+	justify-content: center;
+}
+
+.brandName {
+	color: #fff;
 }
