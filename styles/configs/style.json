@@ -60,7 +60,7 @@
 		"background": {
 			"base": "#303030",
 			"base--inverted": "#212121",
-			"action-primary": "#0F3E99",
+			"action-primary": "#c51818",
 			"action-secondary": "#eef3f7",
 			"emphasis": "#f71963",
 			"disabled": "#f2f4f5",
@@ -93,7 +93,7 @@
 			"muted-5": "#f2f4f5"
 		},
 		"active-background": {
-			"action-primary": "#0c389f",
+			"action-primary": "#c51818",
 			"action-secondary": "#dbe9fd",
 			"emphasis": "#dd1659",
 			"success": "#8bc34a",

@@ -13,20 +13,22 @@
 	background-color: #212121;
 }
 
-.popupContentContainer {
-	background-color: aqua;
-}
-
-.popupContentContainer {
-	background-color: brown;
-}
-
 .popupChildrenContainer {
 	background-color: saddlebrown;
 }
 
 .minicartSideBarContentWrapper {
-	background-color: purple;
+	background-color: #424242;
 }
 
-
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	background: #424242;
+}
+::-webkit-scrollbar-thumb {
+	background: #303030;
+	border-radius: 10px;
+}
