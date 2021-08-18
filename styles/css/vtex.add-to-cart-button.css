@@ -1,0 +1,7 @@
+:global(.vtex-button) {
+	background-color: rgb(196, 37, 37);
+}
+
+:global(.vtex-button):hover {
+	background-color: rgb(13, 156, 192);
+}

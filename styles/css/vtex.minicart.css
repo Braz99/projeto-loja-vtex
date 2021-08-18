@@ -4,3 +4,29 @@
 	width: 30px;
 	margin: 0px 30px;
 }
+
+.openIconContainer :global(.vtex-button) {
+	background-color: #212121;
+}
+
+.openIconContainer :global(.vtex-button):hover {
+	background-color: #212121;
+}
+
+.popupContentContainer {
+	background-color: aqua;
+}
+
+.popupContentContainer {
+	background-color: brown;
+}
+
+.popupChildrenContainer {
+	background-color: saddlebrown;
+}
+
+.minicartSideBarContentWrapper {
+	background-color: purple;
+}
+
+

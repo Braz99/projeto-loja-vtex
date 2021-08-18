@@ -2,9 +2,6 @@
 	background-color: #212121;
 }
 
-:global(.vtex-button):hover {
-	background-color: #212121;
-}
 
 .listItem :global(.vtex-button) {
 	background-color: #212121;

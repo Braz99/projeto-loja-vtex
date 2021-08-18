@@ -208,7 +208,7 @@
 			"product-summary-name",
 			"product-summary-image",
 			"product-selling-price",
-			"product-summary-buy-button"
+			"add-to-cart-button"
 		],
 		"props": {
 			"blockClass": "productsshelf"
