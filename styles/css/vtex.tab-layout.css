@@ -9,6 +9,7 @@
 .listItem :global(.vtex-button) {
 	background-color: #212121;
 	border: 0px solid #212121;
+
 }
 
 .listItemActive {

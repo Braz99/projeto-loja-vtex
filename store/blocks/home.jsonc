@@ -5,7 +5,7 @@
 	"tab-layout#home": {
 		"children": ["tab-list#home", "tab-content#home"],
 		"props": {
-			"defaultActiveTabId": "true"
+			"defaultActiveTabId": "index"
 		}
 	},
 	"tab-list#home": {
@@ -13,6 +13,7 @@
 			"blockClass": "home"
 		},
 		"children": [
+			"tab-list.item#index",
 			"tab-list.item#home1",
 			"tab-list.item#home2",
 			"tab-list.item#home3",
@@ -20,11 +21,17 @@
 			"tab-list.item#home5"
 		]
 	},
+	"tab-list.item#index": {
+		"props": {
+			"tabId": "index",
+			"label": "Home",
+			"defaultActiveTab": "true"
+		}
+	},
 	"tab-list.item#home1": {
 		"props": {
 			"tabId": "category1",
-			"label": "Promoção",
-			"defaultActiveTab": "true"
+			"label": "Promoção"
 		}
 	},
 	"tab-list.item#home2": {
@@ -54,19 +61,56 @@
 	},
 
 	"tab-content#home": {
-		"children": ["tab-content.item#home1", "tab-content.item#home3"]
+		"children": [
+			"tab-content.item#index",
+			"tab-content.item#onsale",
+			"tab-content.item#onsale2",
+			"tab-content.item#corinthians",
+			"tab-content.item#coupon"
+		]
 	},
-	"tab-content.item#home1": {
-		"children": ["slider-layout#home", "list-context.product-list#home"],
+	"tab-content.item#index": {
+		"children": ["image#banner3", "__fold__", "list-context.product-list#home"],
+		"props": {
+			"tabId": "index"
+		}
+	},
+	"tab-content.item#onsale": {
+		"children": [
+			"slider-layout#home",
+			"__fold__",
+			"list-context.product-list#onsale"
+		],
 		"props": {
 			"tabId": "category1"
 		}
 	},
-	
-	"tab-content.item#home3": {
-		"children": ["slider-layout#home", "list-context.product-list#home"],
+
+	"tab-content.item#coupon": {
+		"children": ["rich-text#coupon"],
+		"props": {
+			"tabId": "category2"
+		}
+	},
+	"rich-text#coupon": {
+		"props": {
+			"textAligment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "# Cupons que são um show! \n  ## Cupom: __CUPOM21__"
+		}
+	},
+
+	"tab-content.item#onsale2": {
+		"children": ["slider-layout#home", "list-context.product-list#onsale"],
 		"props": {
 			"tabId": "category3"
+		}
+	},
+
+	"tab-content.item#corinthians": {
+		"children": ["slider-layout#home", "list-context.product-list#corinthians"],
+		"props": {
+			"tabId": "category4"
 		}
 	},
 
@@ -105,15 +149,44 @@
 			"blockClass": "banner"
 		}
 	},
+	"image#banner3": {
+		"props": {
+			"src": "assets/banner2.png",
+			"alt": "banner grande guerreiros",
+			"blockClass": "bannerhome"
+		}
+	},
 	"list-context.product-list#home": {
 		"blocks": ["product-summary.shelf#home"],
 		"children": ["slider-layout#products"],
 		"props": {
-			"category": "Kit UpMedal",
+			"category": "20",
+			"hideUnavailableItems": true,
+			"orderBy": "OrderByPriceASC",
+			"blockClass": "products"
+		}
+	},
+	"list-context.product-list#onsale": {
+		"blocks": ["product-summary.shelf#home"],
+		"children": ["slider-layout#products"],
+		"props": {
+			"category": "20",
+			"hideUnavailableItems": true,
+			"orderBy": "OrderByBestDiscountDESC",
+			"blockClass": "products"
+		}
+	},
+
+	"list-context.product-list#corinthians": {
+		"blocks": ["product-summary.shelf#home"],
+		"children": ["slider-layout#products"],
+		"props": {
+			"category": "20/22",
 			"hideUnavailableItems": true,
 			"blockClass": "products"
 		}
 	},
+
 	"slider-layout#products": {
 		"props": {
 			"itemsPerPage": {
@@ -121,7 +194,7 @@
 				"tablet": 2,
 				"phone": 2
 			},
-			"infinite": false,
+			"infinite": true,
 			"showNavigationArrows": "false",
 			"blockClass": "products",
 			"autoplay": {
