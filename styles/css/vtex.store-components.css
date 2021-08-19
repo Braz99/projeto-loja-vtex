@@ -3,13 +3,55 @@
 	color: rgb(197, 24, 24);
 }
 
-.imageElement--banner  {
-    border-radius: 10px;
+.imageElement--banner {
+	border-radius: 10px;
 }
 
 .imageElement--bannerhome {
-    width: 90%;
-    margin: 10px 5%;
-    border-radius: 10px;
-    
+	width: 90%;
+	margin: 10px 5%;
+	border-radius: 10px;
+}
+
+.container--main {
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.productImage {
+	position: relative;
+	width: 80%;
+	align-self: center;
+}
+
+.productImageTag--main {
+	width: 80%;
+	height: 80%;
+}
+
+.productImagesGallerySlide {
+	display: flex;
+	justify-content: center;
+	height: 600px;
+}
+
+.caretIcon {
+	color: #c51818;
+}
+
+.carouselGalleryThumbs {
+	height: 100vh;
+	background-color: blueviolet;
+}
+
+.swiper-container {
+	overflow: scroll !important;
+	justify-content: center;
+}
+
+.productBrand  {
+	color: #fff;
 }

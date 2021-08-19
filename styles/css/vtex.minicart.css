@@ -26,9 +26,9 @@
 }
 ::-webkit-scrollbar {
 	width: 10px;
-	background: #424242;
+	background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-	background: #303030;
+	background: #c42020;
 	border-radius: 10px;
 }

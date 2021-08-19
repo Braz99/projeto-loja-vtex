@@ -1,4 +1,23 @@
-.flexRow--main-header-desktop  {
+.flexRow--main-header-desktop {
 	background-color: #212121;
 }
 
+.flexRow--main {
+	margin: 20px 0px;
+}
+.flexRowContent--main {
+	margin-top: 0px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.flexCol--productsright {
+	max-width: 90%;
+}
+
+.flexCol--productsleft {
+	max-width: 100%;
+}
