@@ -7,8 +7,7 @@
 	border-radius: 10px;
 }
 
-
-.paginationDot--carousel--isActive {
+.paginationDot--isActive {
 	background-color: rgb(196, 37, 37);
 }
 

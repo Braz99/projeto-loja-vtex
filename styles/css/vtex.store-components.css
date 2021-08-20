@@ -52,6 +52,32 @@
 	justify-content: center;
 }
 
-.productBrand  {
+.productBrand {
 	color: #fff;
+}
+
+.shippingContainer {
+	margin: 20px;
+	padding: 10px;
+	box-sizing: content-box;
+	background-color: #ffff;
+	color: #323232;
+}
+
+.shippingContainer :global(.vtex-input__label) {
+	color: #212121;
+	font-weight: bold;
+}
+
+.shippingContainer :global(.vtex-button) {
+	background-color: #212121;
+}
+
+.shippingTableCell {
+	color: #fff;
+	font-size: 20px;
+}
+
+.shippingTable {
+	margin: 10px 0px;
 }

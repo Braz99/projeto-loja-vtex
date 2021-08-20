@@ -40,7 +40,7 @@
 	"sku-selector": {
 		"props": {
 			"hideImpossibleCombinations": false,
-			"visibility": false
+			"visibility": true
 		}
 	},
 	"product-quantity": {
