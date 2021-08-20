@@ -1,0 +1,35 @@
+{
+	"slider-layout#products": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 3,
+				"tablet": 2,
+				"phone": 2
+			},
+			"infinite": true,
+			"showNavigationArrows": "false",
+			"blockClass": "products",
+			"autoplay": {
+				"timeout": 5000,
+				"stopOnHover": true
+			}
+		}
+	},
+	"product-summary.shelf#home": {
+		"children": [
+			"product-summary-name",
+			"product-summary-image",
+			"product-selling-price",
+			"add-to-cart-button"
+		],
+		"props": {
+			"blockClass": "productsshelf"
+		}
+	},
+
+	"add-to-cart-button": {
+		"props": {
+			"text": "Colocar no carrinho"
+		}
+	}
+}

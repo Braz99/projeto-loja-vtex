@@ -179,39 +179,11 @@
 
 	"list-context.product-list#corinthians": {
 		"blocks": ["product-summary.shelf#home"],
-		"children": ["slider-layout#products"],
+		"children": ["hiringcoders2021.upmedalfb@0.x:slider-layout#products"],
 		"props": {
 			"category": "20/22",
 			"hideUnavailableItems": true,
 			"blockClass": "products"
-		}
-	},
-
-	"slider-layout#products": {
-		"props": {
-			"itemsPerPage": {
-				"desktop": 3,
-				"tablet": 2,
-				"phone": 2
-			},
-			"infinite": true,
-			"showNavigationArrows": "false",
-			"blockClass": "products",
-			"autoplay": {
-				"timeout": 5000,
-				"stopOnHover": true
-			}
-		}
-	},
-	"product-summary.shelf#home": {
-		"children": [
-			"product-summary-name",
-			"product-summary-image",
-			"product-selling-price",
-			"add-to-cart-button"
-		],
-		"props": {
-			"blockClass": "productsshelf"
 		}
 	}
 }
