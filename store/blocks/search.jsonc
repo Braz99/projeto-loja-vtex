@@ -1,12 +1,44 @@
 {
-  "store.search": {
-    "blocks": [
-      "search-bar"
-    ]
-  },
-  "search-bar": {
-    "props": {
-      "placeholder": "pesquisa"
-    }
-  }
+	"store.search": {
+		"blocks": ["search-result-layout"]
+	},
+
+	"search-result-layout": {
+		"blocks": [
+			"search-result-layout.desktop",
+			"search-result-layout.mobile",
+			"search-not-found-layout"
+		],
+		"props": {
+			"blockClass": "layoutsearch"
+		}
+	},
+	"search-result-layout.desktop": {
+		"children": ["flex-layout.row"]
+	},
+	"flex-layout.row": {
+		"children": ["flex-layout.col#e", "flex-layout.col#f"]
+	},
+	"flex-layout.col#e": {
+		"children": [
+			"breadcrumb.search",
+			"search-title.v2",
+			"total-products.v2",
+			"order-by.v2",
+			"search-fetch-previous",
+			"search-content"
+		]
+	},
+	"flex-layout.col#f": {
+		"children": ["filter-navigator.v3", "search-fetch-more"]
+	},
+	"search-not-found-layout": {
+		"children": ["rich-text#notfound"]
+	},
+	"rich-text#notfound": {
+		"props": {
+			"text": "# Sorry Not Found",
+			"position": "CENTER"
+		}
+	}
 }

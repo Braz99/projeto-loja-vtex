@@ -1,6 +1,11 @@
 {
 	"header": {
-		"blocks": ["header-layout.desktop", "header-layout.mobile"]
+		"blocks": ["header-layout.desktop", "header-layout.mobile", "search-bar"]
+	},
+	"search-bar": {
+		"props": {
+			"placeholder": "pesquisa"
+		}
 	},
 	"header.full": {
 		"blocks": ["header-layout.desktop", "header-layout.mobile"]
