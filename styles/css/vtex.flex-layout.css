@@ -21,3 +21,22 @@
 .flexCol--productsleft {
 	max-width: 100%;
 }
+
+.flexRowContent--rowsearch {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.flexColChild--results {
+	text-align: center;
+}
+
+.flexCol--filter {
+	height: 20% !important;
+	color: #fff;
+}
+
+.flexCol--results {
+	color: #fff;
+}
