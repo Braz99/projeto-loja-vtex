@@ -3,6 +3,14 @@
 	color: rgb(197, 24, 24);
 }
 
+.searchBarContainer :global(.vtex-input-prefix__group) {
+	border: none;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+	color: #fff;
+}
+
 .imageElement--banner {
 	border-radius: 10px;
 }
@@ -81,5 +89,3 @@
 .shippingTable {
 	margin: 10px 0px;
 }
-
-

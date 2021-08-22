@@ -7,3 +7,9 @@
 .menufooter {
 	min-width: 100%;
 }
+
+@media (max-width: 760px) {
+	.menufooter--list {
+		gap: 20px;
+	}
+}

@@ -50,8 +50,7 @@
 		"props": {
 			"title": "Logo",
 			"href": "/",
-			"url": "assets/upmedal.png",
-			"width": "80"
+			"url": "assets/logo_upmedal.png"
 		}
 	},
 	"header-layout.mobile": {
@@ -61,7 +60,7 @@
 		"children": ["flex-layout.row#mobile"]
 	},
 	"flex-layout.row#mobile": {
-		"children": ["drawer", "logo", "flex-layout.col#spacer", "minicart.v2"],
+		"children": ["logo", "flex-layout.col#spacer", "search-bar", "minicart.v2"],
 		"props": {
 			"blockClass": "main-header-desktop",
 			"preventHorizontalStretch": true,
@@ -328,9 +327,5 @@
 		"props": {
 			"text": "Carrinho vazio"
 		}
-	},
-
-	"drawer": {
-		"children": []
 	}
 }

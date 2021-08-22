@@ -1,7 +1,6 @@
 {
 	"store.custom#shop": {
-		"blocks": ["search-result-layout.customQuery#store"],
-		"blockClass": "containerresult"
+		"blocks": ["search-result-layout.customQuery#store"]
 	},
 	"search-result-layout.customQuery#store": {
 		"props": {
@@ -51,6 +50,9 @@
 			"product-summary-image",
 			"product-selling-price",
 			"add-to-cart-button"
-		]
+		],
+		"props": {
+			"blockClass": "productsshelf"
+		}
 	}
 }
