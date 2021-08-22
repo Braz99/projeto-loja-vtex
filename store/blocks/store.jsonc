@@ -1,0 +1,56 @@
+{
+	"store.custom#shop": {
+		"blocks": ["search-result-layout.customQuery#store"],
+		"blockClass": "containerresult"
+	},
+	"search-result-layout.customQuery#store": {
+		"props": {
+			"querySchema": {
+				"hideUnavailableItems": true,
+				"maxItemsPerPage": 8,
+				"queryField": "Kit UpMedal",
+				"mapField": "ft"
+			}
+		},
+		"blocks": [
+			"search-result-layout.desktop#store",
+			"search-result-layout.mobile#store"
+		]
+	},
+	"search-result-layout.desktop#store": {
+		"children": ["search-content#store", "search-fetch-more"],
+		"props": {
+			"preventRouteChange": true
+		}
+	},
+	"search-result-layout.mobile#store": {
+		"children": ["search-content#store", "search-fetch-more"],
+		"props": {
+			"preventRouteChange": true
+		}
+	},
+	"search-content#store": {
+		"blocks": ["gallery#store", "not-found"]
+	},
+	"gallery#store": {
+		"props": {
+			"layouts": [
+				{
+					"name": "fouritem",
+					"component": "FourSummary",
+					"itemsPerRow": { "desktop": 4, "mobile": 2 }
+				}
+			],
+
+			"FourSummary": "product-summary.shelf#store"
+		}
+	},
+	"product-summary.shelf#store": {
+		"children": [
+			"product-summary-name",
+			"product-summary-image",
+			"product-selling-price",
+			"add-to-cart-button"
+		]
+	}
+}

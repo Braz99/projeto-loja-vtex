@@ -1,0 +1,9 @@
+.menufooter--list {
+	display: flex;
+	justify-content: space-around;
+	gap: 100px;
+}
+
+.menufooter {
+	min-width: 100%;
+}

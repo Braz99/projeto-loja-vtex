@@ -7,6 +7,10 @@
 	border-radius: 10px;
 }
 
+.sliderLayoutContainer--products {
+	margin: 100px 0px;
+}
+
 .paginationDot--isActive {
 	background-color: rgb(196, 37, 37);
 }
