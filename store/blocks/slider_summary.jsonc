@@ -7,7 +7,6 @@
 				"phone": 2
 			},
 			"infinite": true,
-			"showNavigationArrows": "false",
 			"blockClass": "products",
 			"autoplay": {
 				"timeout": 5000,
